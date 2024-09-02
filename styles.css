@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    /* border-color: #57bbc8; */
+
+}
+
+button {
+    width: 15%;
+    background-color: #57bbc8;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #57bbc8;
+    width: 20%;
+    color:  black;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #eee;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    cursor: pointer;
+}
+
+li span{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+li span:hover{
+    background: #57bbc8;
+    border-radius: 15px;
+    width: 15%;
+    color:  red;
+    cursor: pointer;
+
+}
+
+
+input[type="text"]:hover {
+    width: 90%;
+    padding:10px 20px ;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    border-color: #57bbc8;
+    cursor: pointer;
+}
+
+ul li.checked{
+    color: #57bbc8;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+li::before {
+    content: '\f111'; /* Unicode for FontAwesome circle */
+    font-family: 'Font Awesome 5 Free'; /* Font family for FontAwesome icons */
+    font-weight: 400; /* Font weight for regular icons */
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    cursor: pointer;
+}
+
+li.checked::before {
+    content: '\f058'; /* Unicode for FontAwesome check-circle */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; /* Font weight for solid icons */
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    cursor: pointer;
+}
+
+/* Optional: Adjust the size and color of the icons if needed */
+li::before, li.checked::before {
+    font-size: 20px; /* Adjust size to match your design */
+    color: #57bbc8; /* Adjust color if needed */
+}
